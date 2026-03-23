@@ -1,0 +1,35 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.5; color: #111; background: #fff; padding: 24px; }
+.site-header { text-align: center; margin-bottom: 20px; }
+.logo img { width: 160px; height: auto; }
+main { display: flex; flex-direction: column; gap: 24px; max-width: 1000px; margin: 0 auto; }
+.content-section { border: 1px dashed #e1e1e1; padding: 16px; border-radius: 8px; background: #fafafa; }
+.content-section h2 { margin-bottom: 12px; }
+.placeholder { padding: 12px; border-radius: 6px; background: #fff; border: 1px solid #eee; color: #666; margin-bottom: 8px; }
+.image-placeholder { min-height: 160px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; background: #f5f5f5; color: #999; padding: 12px; text-align: left; }
+.site-footer { text-align: center; margin-top: 24px; color: #666; font-size: 0.9rem; }
+@media (min-width: 700px) {
+  main { flex-direction: column; gap: 20px; }
+  .content-section { flex: 1; }
+}
+
+/* Metrics table styles */
+.metrics-table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 0.95rem; }
+.metrics-table th, .metrics-table td { padding: 8px 10px; border: 1px solid #e6e6e6; text-align: left; }
+.metrics-table thead th { background: #f3f8ff; }
+.metrics-table .region-header td { background: #f7f7f7; font-weight: 600; text-transform: uppercase; }
+.metrics-table tbody tr:nth-child(even) td { background: #ffffff; }
+.metrics-table tbody tr:nth-child(odd) td { background: #fbfbfb; }
+
+/* Highlight calculated metric rows */
+.metrics-table tr.calc-row td { background: #eaf6ff !important; }
+
+/* Placeholder text styles */
+.image-placeholder h3 { margin: 0 0 6px; font-size: 1.05rem; font-weight: 600; color: #0b5fa5; }
+.image-placeholder p { margin: 4px 0; color: #333; line-height: 1.4; word-break: break-word; overflow-wrap: break-word; white-space: normal; }
+
+/* Standardized text-placeholder styles */
+.text-placeholder p { margin: 8px 0; color: #333; line-height: 1.45; font-size: 0.98rem; }
+.text-placeholder ul { margin: 8px 0 12px 20px; color: #333; }
+.text-placeholder li { margin-bottom: 6px; }
+.text-placeholder h3, .text-placeholder h4 { margin: 12px 0 6px; color: #0b5fa5; font-weight: 600; }
